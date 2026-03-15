@@ -3,173 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Multispeciality Dental Hospital | Dr. Divya Manukonda</title>
-    <meta name="description" content="Expert dental care in Malikipuram by Dr. Divya Manukonda. Warm, family-oriented multispeciality dental hospital.">
+    <title>Clinic Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Color Palette & Base Styles */
-        :root {
-            --primary-teal: #008080;
-            --light-teal: #e0f2f1;
-            --dark-gray: #333333;
-            --white: #ffffff;
-            --warm-bg: #fdfbf7;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--warm-bg);
-            color: var(--dark-gray);
-            line-height: 1.6;
-        }
-        h1, h2, h3 { color: var(--primary-teal); }
-        
-        /* Header & Navigation */
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .logo { max-height: 60px; }
-        .lang-btn {
-            background-color: var(--primary-teal);
-            color: var(--white);
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: var(--light-teal);
-        }
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 20px;
-        }
-        
-        /* Call to Action Buttons */
-        .cta-container {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
-        .btn {
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            color: var(--white);
-            display: inline-block;
-        }
-        .btn-call { background-color: var(--primary-teal); }
-        .btn-wa { background-color: #25D366; } /* WhatsApp Green */
-
-        /* Services Section */
-        .services {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .service-list {
-            list-style-type: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .service-list li {
-            background: var(--white);
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            border-left: 4px solid var(--primary-teal);
-        }
-
-        /* Contact & Footer */
-        .contact-info {
-            background-color: var(--dark-gray);
-            color: var(--white);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .contact-info a { color: var(--light-teal); }
-        .counter { margin-top: 20px; opacity: 0.8; font-size: 0.9em; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 20px; text-align: center; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        .gallery img { width: 300px; height: auto; border-radius: 10px; transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+        .card { background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; width: 300px; }
+        .carousel { display: flex; overflow: hidden; }
+        .carousel img { width: 100%; } /* Carousel styling */
+        .mobile-responsive { padding: 10px; } /* Mobile Responiveness */
     </style>
 </head>
 <body>
-
     <header>
-        <img src="logo.png" alt="Nova Dental Logo" class="logo">
-        <button class="lang-btn" onclick="toggleLanguage()">తెలుగు / English</button>
+        <h1>Welcome to Our Clinic</h1>
     </header>
-
-    <section class="hero">
-        <h1 data-en="A Warm, Local Welcome to Nova Dental" data-te="నోవా డెంటల్ కి స్వాగతం">A Warm, Local Welcome to Nova Dental</h1>
-        <p data-en="Caring for Every Smile, Multispeciality to Your Need." data-te="ప్రతి చిరునవ్వుకు రక్షణ, మీ అవసరానికి తగ్గ మల్టీస్పెషాలిటీ.">Caring for Every Smile, Multispeciality to Your Need.</p>
-        
-        <div class="cta-container">
-            <a href="tel:+919391115403" class="btn btn-call" data-en="📞 Call Now" data-te="📞 ఇప్పుడే కాల్ చేయండి">📞 Call Now</a>
-            <a href="https://wa.me/919391115403" class="btn btn-wa" data-en="💬 WhatsApp Us" data-te="💬 వాట్సాప్ చేయండి">💬 WhatsApp Us</a>
+    <div class="carousel">
+        <img src="IMG_3154.png" alt="Clinic image 1">
+        <img src="IMG_3155.png" alt="Clinic image 2">
+    </div>
+    <div class="gallery">
+        <img src="IMG_3160.png" alt="Gallery image 1">
+        <img src="IMG_3162.jpeg" alt="Gallery image 2">
+        <img src="IMG_3163.jpeg" alt="Gallery image 3">
+        <img src="IMG_3167.jpeg" alt="Gallery image 4">
+        <img src="IMG_3169.png" alt="Gallery image 5">
+        <img src="IMG_3170.png" alt="Gallery image 6">
+        <img src="IMG_3171.png" alt="Gallery image 7">
+    </div>
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="card">
+            <h3>Dental Care</h3>
+            <p>Professional dental services for all ages.</p>
         </div>
-
-        <img src="hero-image.jpg" alt="Family Dental Care at Nova">
-    </section>
-
-    <section class="services">
-        <h2 data-en="Our Specialities" data-te="మా సేవలు">Our Specialities</h2>
-        <ul class="service-list">
-            <li data-en="Scaling & Teeth Whitening (Bleaching)" data-te="స్కేలింగ్ & పళ్ళు తెల్లబరుచుట">Scaling & Teeth Whitening (Bleaching)</li>
-            <li data-en="Root Canal Treatment" data-te="రూట్ కెనాల్ ట్రీట్మెంట్">Root Canal Treatment</li>
-            <li data-en="Pulp Therapy for Kids" data-te="పిల్లలకు ప్రత్యేక దంత వైద్యం">Pulp Therapy for Kids</li>
-            <li data-en="Extractions & Impactions" data-te="జ్ఞాన దంతములు తొలగించుట">Extractions & Impactions</li>
-            <li data-en="Implants & Dentures (Fixed & Removable)" data-te="ఇంప్లాంట్ పద్ధతిలో పళ్ళు అమర్చుట & కట్టుడు పళ్ళు">Implants & Dentures (Fixed & Removable)</li>
-            <li data-en="Restorations (Composite & GIC)" data-te="పంటి రంగు ఫిల్లింగ్">Restorations (Composite & GIC)</li>
-            <li data-en="Smile Design" data-te="స్మైల్ డిజైనింగ్">Smile Design</li>
-        </ul>
-    </section>
-
-    <section class="contact-info">
-        <h2 data-en="Visit Us" data-te="మమ్మల్ని సందర్శించండి">Visit Us</h2>
-        <p><strong>Dr. M. Divya</strong></p>
-        <p data-en="Clinic Hours: 9:00 AM to 5:00 PM (Sunday Holiday)" data-te="సమయం: ప్రతిరోజు ఉదయం 9 గం. నుండి సాయంత్రం 5 గం. వరకు (ఆదివారం సెలవు)">Clinic Hours: 9:00 AM to 5:00 PM (Sunday Holiday)</p>
-        <p>CR73+5MP, Malikipuram, Andhra Pradesh 533253, India</p>
-        <p>
-            <a href="https://www.facebook.com/profile.php?id=685201728020577" target="_blank">Facebook</a> | 
-            <a href="https://www.instagram.com/nova.dentalhospital" target="_blank">Instagram</a>
-        </p>
-        
-        <div class="counter">
-            <span data-en="Website Visitors: " data-te="వెబ్‌సైట్ సందర్శకులు: ">Website Visitors: </span>
-            <img src="https://hits.se/YOUR_GITHUB_USERNAME.github.io.svg" alt="Visitor count">
+        <div class="card">
+            <h3>Emergency Care</h3>
+            <p>Immediate care when you need it the most.</p>
         </div>
-    </section>
-
+        <div class="card">
+            <h3>Cosmetic Dentistry</h3>
+            <p>Enhancing your smile and appearance.
+        </div>
+    </div>
     <script>
-        let currentLang = 'en';
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'te' : 'en';
-            const elements = document.querySelectorAll('[data-en]');
-            elements.forEach(el => {
-                el.innerText = el.getAttribute(`data-${currentLang}`);
-            });
-        }
+        // JavaScript for smooth animations can be added here
     </script>
 </body>
 </html>
