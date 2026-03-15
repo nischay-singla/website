@@ -3,54 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinic Website</title>
+    <meta name="description" content="Nova Dental Hospital - Your Family Dental Clinic">
+    <title>Nova Dental Hospital</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 20px; text-align: center; }
-        .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
-        .gallery img { width: 300px; height: auto; border-radius: 10px; transition: transform 0.3s; }
-        .gallery img:hover { transform: scale(1.05); }
-        .card { background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; width: 300px; }
-        .carousel { display: flex; overflow: hidden; }
-        .carousel img { width: 100%; } /* Carousel styling */
-        .mobile-responsive { padding: 10px; } /* Mobile Responiveness */
-    </style>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Clinic</h1>
+        <h1>Welcome to Nova Dental Hospital</h1>
+        <h2>Providing Quality Family Dental Care</h2>
+        <button onclick="window.location.href='tel:+910000000000'">Call Us</button>
+        <button onclick="window.open('https://wa.me/10000000000', '_blank')">WhatsApp Us</button>
     </header>
-    <div class="carousel">
-        <img src="IMG_3154.png" alt="Clinic image 1">
-        <img src="IMG_3155.png" alt="Clinic image 2">
-    </div>
-    <div class="gallery">
-        <img src="IMG_3160.png" alt="Gallery image 1">
-        <img src="IMG_3162.jpeg" alt="Gallery image 2">
-        <img src="IMG_3163.jpeg" alt="Gallery image 3">
-        <img src="IMG_3167.jpeg" alt="Gallery image 4">
-        <img src="IMG_3169.png" alt="Gallery image 5">
-        <img src="IMG_3170.png" alt="Gallery image 6">
-        <img src="IMG_3171.png" alt="Gallery image 7">
-    </div>
-    <div class="services">
+
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="card">
-            <h3>Dental Care</h3>
-            <p>Professional dental services for all ages.</p>
+        <ul>
+            <li>General Dentistry</li>
+            <li>Cosmetic Dentistry</li>
+            <li>Pediatric Dentistry</li>
+            <li>Orthodontics</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Dental Clinic Image 1">
+            <img src="image2.jpg" alt="Dental Clinic Image 2">
+            <img src="image3.jpg" alt="Dental Clinic Image 3">
         </div>
-        <div class="card">
-            <h3>Emergency Care</h3>
-            <p>Immediate care when you need it the most.</p>
-        </div>
-        <div class="card">
-            <h3>Cosmetic Dentistry</h3>
-            <p>Enhancing your smile and appearance.
-        </div>
-    </div>
+    </section>
+
+    <section id="hours">
+        <h2>Clinic Hours</h2>
+        <p>Monday to Friday: 9am - 5pm</p>
+    </section>
+
+    <footer>
+        <p>Visitor Count: <span id="visitor-counter">0</span></p>
+    </footer>
+
     <script>
-        // JavaScript for smooth animations can be added here
+        // Visitor counter script
+        let count = localStorage.getItem('visitorCount') || 0;
+        count++;
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('visitor-counter').innerText = count;
     </script>
 </body>
 </html>
