@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nova Dental Hospital - Your Family Dental Clinic">
-    <title>Nova Dental Hospital</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <meta name="description" content="Welcome to Nova Dental Hospital, led by Dr. Divya Manukonda. We offer a range of dental services to help you achieve a beautiful smile.">
+    <meta name="keywords" content="dentist, dental services, Nova Dental Hospital, Dr. Divya Manukonda, Malikipuram">
+    <title>Nova Dental Hospital - Family Dentistry</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f0f0f0; text-align: center; padding: 1em; }
+        .container { width: 80%; margin: auto; }
+        .gallery img { width: 100%; height: auto; }
+        .cta { background-color: #007BFF; color: white; padding: 10px; text-align: center; cursor: pointer; }
+        @media (max-width: 600px) {
+            .container { width: 95%; }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Nova Dental Hospital</h1>
-        <h2>Providing Quality Family Dental Care</h2>
-        <button onclick="window.location.href='tel:+910000000000'">Call Us</button>
-        <button onclick="window.open('https://wa.me/10000000000', '_blank')">WhatsApp Us</button>
+        <h2>by Dr. Divya Manukonda</h2>
     </header>
-
-    <section id="services">
-        <h2>Our Services</h2>
+    <div class="container">
+        <h3>Clinic Address</h3>
+        <p>CR73+5MP, Malikipuram, Andhra Pradesh 533253 India</p>
+        <h3>Contact Us</h3>
+        <p>Phone: +919391115403</p>
+        <div class="cta" onclick="location.href='tel:+919391115403';">Call Us</div>
+        <div class="cta" onclick="location.href='https://wa.me/919391115403';">WhatsApp Us</div>
+        <h3>Our Services</h3>
         <ul>
-            <li>General Dentistry</li>
-            <li>Cosmetic Dentistry</li>
-            <li>Pediatric Dentistry</li>
-            <li>Orthodontics</li>
+            <li>Scaling</li>
+            <li>Restorations</li>
+            <li>Bleaching</li>
+            <li>Extractions</li>
+            <li>Impactions</li>
+            <li>Implants</li>
+            <li>Root Canal</li>
+            <li>Fixed Partial Dentures</li>
+            <li>Smile Design</li>
+            <li>Pulp Therapy</li>
         </ul>
-    </section>
-
-    <section id="gallery">
-        <h2>Image Gallery</h2>
+        <h3>Clinic Hours</h3>
+        <p>9 AM to 5 PM (Sunday Holiday)</p>
+        <h3>Follow Us</h3>
+        <p><a href="https://www.instagram.com/nova.dentalhospital">Instagram</a> | <a href="https://www.facebook.com/profile.php?id=685201728020577">Facebook</a></p>
+        <h3>Gallery</h3>
         <div class="gallery">
-            <img src="image1.jpg" alt="Dental Clinic Image 1">
-            <img src="image2.jpg" alt="Dental Clinic Image 2">
-            <img src="image3.jpg" alt="Dental Clinic Image 3">
+            <img src="IMG_3154.png" alt="Dental Image 1">
+            <img src="IMG_3155.png" alt="Dental Image 2">
+            <img src="IMG_3156.png" alt="Dental Image 3">
+            <img src="IMG_3157.png" alt="Dental Image 4">
+            <img src="IMG_3158.png" alt="Dental Image 5">
+            <img src="IMG_3159.png" alt="Dental Image 6">
+            <img src="IMG_3160.png" alt="Dental Image 7">
+            <img src="IMG_3161.png" alt="Dental Image 8">
+            <img src="IMG_3162.png" alt="Dental Image 9">
+            <img src="IMG_3163.png" alt="Dental Image 10">
+            <img src="IMG_3164.png" alt="Dental Image 11">
+            <img src="IMG_3165.png" alt="Dental Image 12">
+            <img src="IMG_3166.png" alt="Dental Image 13">
+            <img src="IMG_3167.png" alt="Dental Image 14">
+            <img src="IMG_3168.png" alt="Dental Image 15">
+            <img src="IMG_3169.png" alt="Dental Image 16">
+            <img src="IMG_3170.png" alt="Dental Image 17">
+            <img src="IMG_3171.png" alt="Dental Image 18">
         </div>
-    </section>
-
-    <section id="hours">
-        <h2>Clinic Hours</h2>
-        <p>Monday to Friday: 9am - 5pm</p>
-    </section>
-
+    </div>
     <footer>
-        <p>Visitor Count: <span id="visitor-counter">0</span></p>
+        <p>&copy; 2026 Nova Dental Hospital</p>
     </footer>
-
     <script>
-        // Visitor counter script
-        let count = localStorage.getItem('visitorCount') || 0;
-        count++;
-        localStorage.setItem('visitorCount', count);
-        document.getElementById('visitor-counter').innerText = count;
+        // Visitor counter using localStorage
+        let visitCount = localStorage.getItem('visitCount') || 0;
+        visitCount++;
+        localStorage.setItem('visitCount', visitCount);
+        console.log('Visitor count:', visitCount);
+
+        // Language toggle functionality can be added here
     </script>
 </body>
 </html>
